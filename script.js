@@ -11,7 +11,7 @@ document.getElementById("submit").onclick = function () {
 
   const message = "First Name: " + fname +
                   " Last Name: " + lname +
-                  " Contact Number: " + contact +
+                  " Phone Number: " + contact +
                   " Email ID: " + email;
 
   alert(message);
