@@ -1,18 +1,10 @@
-document.getElementById("submit").onclick = function () {
-  const fname = document.getElementById("fname").value.trim();
-  const lname = document.getElementById("lname").value.trim();
-  const contact = document.getElementById("contact").value.trim();
-  const email = document.getElementById("email").value.trim();
-
-  if (!fname || !lname || !contact || !email) {
-    alert("Please fill all the fields.");
-    return;
-  }
-
-  const message = "First Name: " + fname +
-                  " Last Name: " + lname +
-                  " Phone Number: " + contact +
-                  " Email ID: " + email;
-
-  alert(message);
-};
+function submitForm() {
+            const form = document.getElementById('myForm');
+            const firstName = form.elements['First Name'].value;
+            const lastName = form.elements['Last Name'].value;
+            const phoneNumber = form.elements['Phone Number'].value;
+            const email = form.elements['Email ID'].value;
+            
+            const message = `First Name: ${firstName}\nLast Name: ${lastName}\nPhone Number: ${phoneNumber}\nEmail ID: ${email}`;
+            alert(message);
+        }
